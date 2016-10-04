@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  main.container
+    .row.center-align
+      .col.s12
+        h1 Voting App
+        if !user
+          a.waves-effect.color-Bp-light.btn(type='button', onclick="window.location.href='/signup'") Create account
+            i.material-icons.left cloud
+        .push
+      .col.s4
+        i#quick.material-icons.large flash_on
+        h4 Live Results
+        p.light.center
+          | Live graphs show your poll results immediately in an easy to understand format. One graph will not provide the whole picture, that's why we provide multiple graph types to better describe your results.
+      .col.s4
+        i#site.material-icons.large public
+        h4 Works Everywhere
+        p.light.center
+          | Traditional desktop computers now represent only 30% of Internet traffic. Your poll must work on the tablets, smart phones, netbooks and notebooks that your visitors are using. Our responsive designs do just that.
+      .col.s4
+        i#secured.material-icons.large people
+        h4 Social Integration
+        p.light.center
+          | Free integrated facebook or traditional comments allow your poll voters to provide immediate feedback and discuss results. Social share buttons encourage your poll voters to help spread the word.
+      .push
